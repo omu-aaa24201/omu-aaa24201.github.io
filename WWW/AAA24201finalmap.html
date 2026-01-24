@@ -141,11 +141,11 @@ fetch('./28204_1.geojson')
         });
       }
     })
-      // ★ 正しい施設名プロパティ
+      
       .bindPopup((layer) => layer.feature.properties["施設・場所名"])
       .addTo(shelterLayer);
 
-    // ★ チェックボックス登録（ここ重要）
+    // チェックボックス
     LayerControl.addOverlay(shelterLayer, "指定緊急避難場所");
   });
 
